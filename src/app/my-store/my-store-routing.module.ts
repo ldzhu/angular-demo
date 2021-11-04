@@ -10,9 +10,9 @@ const routes: Routes = [
     path: '',
     component: MyStoreComponent,
     children: [
-      {path: '', redirectTo: 'products'},
+      {path: '', redirectTo: 'products', pathMatch: 'full'},
       {path: 'products', component: ProductListComponent},
-      {path: 'products/:productId', component: ProductDetailComponent},
+      {path: 'products/:productId', component: ProductDetailComponent}
     ]
   }
 ];
