@@ -2,11 +2,11 @@ import {Component, OnInit} from '@angular/core';
 import {LoggerService} from "./logger.service";
 
 @Component({
-  selector: 'app-hello-world-ngif',
-  templateUrl: './hello-world-ngif.component.html',
-  styleUrls: ['./hello-world-ngif.component.scss']
+  selector: 'app-hello-world-ng-if',
+  templateUrl: './hello-world-ng-if.component.html',
+  styleUrls: ['./hello-world-ng-if.component.scss']
 })
-export class HelloWorldNgifComponent implements OnInit {
+export class HelloWorldNgIfComponent implements OnInit {
 
   message = 'I\'m read only!';
   canEdit = false;

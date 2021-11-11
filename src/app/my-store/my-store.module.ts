@@ -1,4 +1,4 @@
-import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
+import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {MyStoreRoutingModule} from "./my-store-routing.module";
 import {MyStoreComponent} from "./my-store.component";
@@ -16,7 +16,6 @@ import {ProductDetailComponent} from './product-detail/product-detail.component'
     ProductAlertsComponent,
     ProductDetailComponent
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     CommonModule,
     MyStoreRoutingModule
