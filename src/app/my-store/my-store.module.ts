@@ -1,5 +1,6 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
+import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {MyStoreRoutingModule} from "./my-store-routing.module";
 import {MyStoreComponent} from "./my-store.component";
@@ -24,6 +25,7 @@ import {CartService} from "./cart/cart-service";
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     HttpClientModule,
     MyStoreRoutingModule
   ],

@@ -6,3 +6,15 @@
 </div>
 
 <a routerLink="../shipping">Shipping</a>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name"></label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+  <div>
+    <label for="address"></label>
+    <input id="address" type="text" formControlName="address">
+  </div>
+  <button class="button" type="submit">Purchase</button>
+</form>
