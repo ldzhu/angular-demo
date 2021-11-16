@@ -1,7 +1,7 @@
-import {Injectable} from "@angular/core";
-import {Product} from "../product-list/products";
-import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
+import {Injectable} from '@angular/core';
+import {Product} from '../product-list/products';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
 
 export interface ShippingPrice {
   type: string,

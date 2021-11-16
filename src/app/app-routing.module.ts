@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {HelloWorldNgIfComponent} from "./hello-world-ngif/hello-world-ng-if.component";
+import {HelloWorldNgIfComponent} from './hello-world-ngif/hello-world-ng-if.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'store', pathMatch: 'full'},

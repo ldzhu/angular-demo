@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import {CartService, ShippingPrice} from "../cart/cart-service";
-import {Observable} from "rxjs";
+import {Component, OnInit} from '@angular/core';
+import {Observable} from 'rxjs';
+import {CartService, ShippingPrice} from '../cart/cart-service';
 
 @Component({
   selector: 'app-shipping',
@@ -10,7 +10,8 @@ import {Observable} from "rxjs";
 export class ShippingComponent implements OnInit {
   shippingItems: Observable<ShippingPrice[]> | undefined;
 
-  constructor(private $cart: CartService) { }
+  constructor(private $cart: CartService) {
+  }
 
   ngOnInit(): void {
     this.shippingItems = this.$cart.getShippingPrices();
