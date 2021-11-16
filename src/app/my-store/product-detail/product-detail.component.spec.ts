@@ -1,6 +1,9 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {HttpClientTestingModule} from '@angular/common/http/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {RouterTestingModule} from '@angular/router/testing';
+import {CartService} from '../cart/cart-service';
 
-import { ProductDetailComponent } from './product-detail.component';
+import {ProductDetailComponent} from './product-detail.component';
 
 describe('ProductDetailComponent', () => {
   let component: ProductDetailComponent;
@@ -8,9 +11,11 @@ describe('ProductDetailComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ProductDetailComponent ]
+      imports: [RouterTestingModule, HttpClientTestingModule],
+      declarations: [ProductDetailComponent],
+      providers: [{provide: CartService}]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
