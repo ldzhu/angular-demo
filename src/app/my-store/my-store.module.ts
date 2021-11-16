@@ -1,11 +1,15 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
+import {HttpClientModule} from "@angular/common/http";
 import {MyStoreRoutingModule} from "./my-store-routing.module";
 import {MyStoreComponent} from "./my-store.component";
 import {TopBarComponent} from "./top-bar/top-bar.component";
 import {ProductListComponent} from "./product-list/product-list.component";
 import {ProductAlertsComponent} from "./product-alerts/product-alerts.component";
 import {ProductDetailComponent} from './product-detail/product-detail.component';
+import {CartComponent} from "./cart/cart-component";
+import {ShippingComponent} from './shipping/shipping.component';
+import {CartService} from "./cart/cart-service";
 
 
 @NgModule({
@@ -14,11 +18,18 @@ import {ProductDetailComponent} from './product-detail/product-detail.component'
     TopBarComponent,
     ProductListComponent,
     ProductAlertsComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    CartComponent,
+    ShippingComponent
   ],
   imports: [
     CommonModule,
+    HttpClientModule,
     MyStoreRoutingModule
+  ],
+  providers: [
+    CartService
   ]
 })
-export class MyStoreModule { }
+export class MyStoreModule {
+}
